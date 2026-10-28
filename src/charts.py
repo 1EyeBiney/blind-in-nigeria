@@ -23,7 +23,8 @@ def range_bars(cid: str, title: str, desc: str, rows: list[dict], caption: str, 
                fmt=lambda v: str(v)) -> str:
     """Horizontal bars from a low to a high figure, one per row.
 
-    rows: {"label": str, "lo": int, "hi": int, "cells": [html...]} where cells are the table cells after the label
+    rows: {"label": str, "short": str, "lo": int, "hi": int, "cells": [html...]}: short is the label drawn beside the
+    bar (a few words; the full label is in the table), and cells are the table cells after the label
     (already rendered, money included). The chart shows lo..hi; the table shows the cells. fmt returns the label
     for the high value as SVG-safe markup (a tspan), never plain text that a reader could mistake for prose."""
     top = max(r["hi"] for r in rows) or 1
@@ -36,7 +37,7 @@ def range_bars(cid: str, title: str, desc: str, rows: list[dict], caption: str, 
         y = pad + i * row_h
         x0 = label_w + r["lo"] * scale
         x1 = label_w + r["hi"] * scale
-        svg.append(f'<text x="{label_w - 8}" y="{y + 22}" text-anchor="end">{_e(r["label"])}</text>')
+        svg.append(f'<text x="{label_w - 8}" y="{y + 22}" text-anchor="end">{_e(r.get("short", r["label"]))}</text>')
         svg.append(f'<rect class="track" x="{label_w}" y="{y + 9}" width="{w - label_w - 90:.0f}" height="16" rx="3"/>')
         svg.append(f'<rect class="bar" x="{x0:.1f}" y="{y + 9}" width="{max(x1 - x0, 3):.1f}" height="16" rx="3"/>')
         svg.append(f'<text x="{x1 + 6:.1f}" y="{y + 22}">{fmt(r["hi"])}</text>')

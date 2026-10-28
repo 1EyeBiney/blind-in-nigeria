@@ -212,12 +212,12 @@ a free screen reader. The <a href="numbers.html">numbers</a> say what each costs
 # ----------------------------------------------------------------------------------------------- numbers
 
 def numbers(d: dict) -> str:
-    ids = ["two-meals-staples-monthly", "two-meals-all-in-monthly", "third-meal-staples-monthly",
-           "third-meal-all-in-monthly"]
+    ids = [("two-meals-staples-monthly", "Two meals, staples"), ("two-meals-all-in-monthly", "Two meals, everything"),
+           ("third-meal-staples-monthly", "Third meal, staples"), ("third-meal-all-in-monthly", "Third meal, everything")]
     rows = []
-    for eid in ids:
+    for eid, short in ids:
         x = est(d, eid)
-        rows.append({"label": x["label"], "lo": x["usd_cents_lo"], "hi": x["usd_cents_hi"],
+        rows.append({"label": x["label"], "short": short, "lo": x["usd_cents_lo"], "hi": x["usd_cents_hi"],
                      "cells": [m.usd_range(x["usd_cents_lo"], x["usd_cents_hi"]),
                                m.ngn_range(x["ngn_lo"], x["ngn_hi"]), e(x["note"])]})
     chart = charts.range_bars(
