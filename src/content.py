@@ -18,6 +18,7 @@ NAV = [
     ("index.html", "Home"),
     ("story.html", "The story"),
     ("already.html", "What blind Nigerians already do"),
+    ("earning-a-living.html", "Earning a living"),
     ("numbers.html", "The numbers"),
     ("ledger.html", "The ledger"),
     ("help.html", "How to help"),
@@ -29,13 +30,6 @@ NAV = [
 ]
 
 FUTURE_STUDIES = [
-    ("How blind Nigerians make a living, and what the begging figures really say",
-     "A figure often repeated is that most blind people in Nigeria beg to survive. When we went looking for its source "
-     "in October 2026 we did not find a national study behind it. A 2010 paper found that about seven in ten of the "
-     "beggars counted in Lagos were blind, which is a statement about beggars, not about blind people; a small survey "
-     "in one city found most of its blind participants begged; and fundraising pages repeat larger figures with no "
-     "source at all. We will not use the sentence until we can stand behind it. This study will set out what is "
-     "actually known, from the national blindness survey and from the people who live it."),
     ("Why people are blind in Nigeria",
      "Cataract, glaucoma, river blindness in the countryside, and what the harmattan dust does and does not do. The "
      "Nigeria National Blindness and Visual Impairment Survey is the starting point."),
@@ -84,13 +78,13 @@ def this_month() -> str:
 
 def home(d: dict) -> str:
     per = est(d, "third-meal-per-child-monthly")
-    return f"""<h1>A school in Lagos run by blind people, and the meal it had to cut</h1>
+    return f"""<h1>A school in Lagos run almost entirely by blind people, and the meal it had to cut</h1>
 <p class="lede">{e(brand.PARTNER)}, in {e(brand.PARTNER_PLACE)}, is a home and school where nearly everyone,
-staff included, is blind. About {c(d, "boarders")} blind children board there. This year the home had to cut their
-meals from {c(d, "meals-before")} a day to {c(d, "meals-now")}. We are a small group of friends in Indiana, led by a
+staff included, is blind. About {c(d, "boarders")} blind students board there, aged from about twelve to over thirty. The home has had to
+cut their meals from {c(d, "meals-before")} a day to {c(d, "meals-now")}. We are a small group of friends in Indiana, led by a
 blind man, working to help restore the third meal and to show what blind Nigerians already do when they have the
 means.</p>
-<p>Restoring a third meal for one child costs {m.estimate(per, with_ngn=False)}.</p>
+<p>Restoring a third meal for one student costs {m.estimate(per, with_ngn=False)}.</p>
 
 <section class="door">
 <h2>I want to help</h2>
@@ -112,6 +106,10 @@ tells you how to verify any of it.</p>
 <p>Bethesda is run by blind people. Its students study, code, play chess and play audible football. We do not
 need anyone's pity on their behalf; we need the means to do things differently than others do them.
 <a href="already.html">What blind Nigerians already do</a> is where we are gathering that record.</p>
+<p>Where that means is missing, blind Nigerians beg, and nobody who has been asked wants to. When 202 blind
+street beggars in Sokoto were asked, 201 of them said they wanted another way to earn a living.
+<a href="earning-a-living.html">How blind Nigerians earn a living</a> is our first study: what the evidence
+says, what it does not, and the figures we have stopped repeating.</p>
 </section>
 
 <h2>Where things stand</h2>
@@ -130,8 +128,11 @@ def story(d: dict) -> str:
 run almost entirely by blind people.</p>
 
 <h2>Bethesda</h2>
-<p>About {c(d, "people")} people live, study or work at Bethesda: around {c(d, "boarders")} boarding students and
-about {c(d, "staff")} staff, of whom only {c(d, "sighted-staff")} are sighted. It is led by Rev. Dr. Chioma Ohakwe,
+<p>Bethesda's own figure for the people it serves, students and residents together, is about {c(d, "people")}.
+Around {c(d, "boarders")} of them are boarding students, aged from about twelve to over thirty, and there are
+about {c(d, "staff")} staff, of whom only {c(d, "sighted-staff")} are sighted. How the larger figure divides
+among boarders, day students, staff and the students Bethesda sponsors at universities elsewhere is being
+clarified with Bethesda. It is led by Rev. Dr. Chioma Ohakwe,
 and the home worships with the Redeemed Christian Church of God. The students learn what any school teaches, and
 some of them code, play chess, and play audible football. Bethesda also supports blind students through university.
 </p>
@@ -163,7 +164,7 @@ and talking watches. Those come later, and they will be costed and listed in the
 
 <h2>Why no pictures yet</h2>
 <p>No student's name, picture or story appears here until Bethesda and the student have agreed to it in writing.
-We asked about pictures and recordings on the first visit and did not take any. When they come, they will show
+No pictures or recordings were taken on the first visit. When they come, they will show
 capable people at work.</p>
 """
 
@@ -181,17 +182,17 @@ engineers of their own lives, and the people at Bethesda prove it daily. What th
 means to do things in the different ways blind people do them.</p>
 
 <h2>A school run by blind people</h2>
-<p>Of about {c(d, "staff")} staff, {c(d, "sighted-staff")} are sighted. Blind teachers teach, blind administrators
-run the home, and blind leaders have kept it going through a year when the food money ran short.</p>
+<p>Of about {c(d, "staff")} staff, {c(d, "sighted-staff")} are sighted. Blind teachers teach, blind staff run the daily life
+of the home, and together they have kept it going while the food money ran short.</p>
 {coming}
 
 <h2>Students who code</h2>
-<p>Some students write software, using screen readers on phones and on the few computers the school has. Brian,
+<p>Students are learning to code, using screen readers on phones and laptops. Brian,
 who teaches screen readers for a living, intends to teach alongside them by remote connection.</p>
 {coming}
 
 <h2>Chess</h2>
-<p>Chess with a tactile board is played at Bethesda as it is in blind clubs around the world.</p>
+<p>Chess is played at Bethesda as it is in blind clubs around the world.</p>
 {coming}
 
 <h2>Audible football</h2>
@@ -203,9 +204,124 @@ who teaches screen readers for a living, intends to teach alongside them by remo
 those students' paths, with their permission, as we learn it.</p>
 {coming}
 
+<h2>Begging is a last resort, not a choice</h2>
+<p>Where there is no school, no rehabilitation and no work, blind Nigerians beg to live. Every study that has
+asked them finds the same thing: they want other work. When 202 blind street beggars in Sokoto were asked,
+201 said they wanted another way to earn a living, half of them in farming or trade. We set out what is actually
+known, and what is not, in <a href="earning-a-living.html">How blind Nigerians earn a living</a>.</p>
+
 <h2>What this asks of a reader</h2>
 <p>Not sympathy. A share of the means: a meal a day, a cane that lasts a few months on a Lagos road, a laptop with
 a free screen reader. The <a href="numbers.html">numbers</a> say what each costs.</p>
+"""
+
+
+# ----------------------------------------------------------------------------------------------- earning a living
+
+def earning(d: dict) -> str:
+    src = m.source_link("source-material/41-how-blind-nigerians-earn-a-living.md",
+                        "How blind Nigerians earn a living: what the evidence actually says")
+    return f"""<h1>How blind Nigerians earn a living</h1>
+<p class="lede">What the evidence says about blind adults in Nigeria and begging, what it does not say, and the
+figures we have stopped repeating. This is the first of our studies. Every number here traces to a named source,
+and the working paper behind the page, with every link and the date it was read, is {src}.</p>
+
+<h2>Why we wrote this</h2>
+<p>A sentence had been used in conversation about this work: that seventy percent of blind people in Nigeria have
+to beg to survive. In October 2026 we went looking for its source and did not find one. No study, survey or
+government source supports any national percentage of blind Nigerians who beg. The sentence is withdrawn. This
+page records what can be said instead.</p>
+
+<h2>The bottom line</h2>
+<p>Nobody has measured what share of blind Nigerians beg. The numbers that get repeated come from one small study
+in one city and one conference paper from 1972 that cannot be found. What the national data does show is a steep,
+well-documented disadvantage: blindness and deep poverty travel together, begging is a documented way of surviving
+where rehabilitation is absent, and nearly everyone studied who begs wants other work.</p>
+
+<h2>Three claims that get blended</h2>
+<p>Three different statements get folded into one sentence. They have different evidence behind them.</p>
+
+<h3>The share of blind people who beg</h3>
+<p>Measured once. In Ilorin in 2010, 47 of 61 totally blind adults, 77 percent, lived by street begging, and 89
+percent of them wanted other work. The 61 were found partly at begging sites, in one city. The figure is honest
+about those 61 people and says nothing about Nigeria.</p>
+
+<h3>The share of beggars who are blind</h3>
+<p>Three data points, and they disagree. A 1972 conference paper, cited second-hand, put about seventy percent of
+roughly four thousand Lagos beggars as blind; the original cannot be found or checked. In Abakaliki in 2019, 15 of
+50 beggars reported impaired sight. In Onitsha in 2011, 168 destitute people were examined by clinicians and 12.5
+percent were blind, with another 10.2 percent visually impaired; that is the only clinically measured value. A
+spread from 12.5 to 70 percent means there is no stable figure. It is also a statement about beggars, not about
+blind people, which is where the seventy percent sentence went wrong.</p>
+
+<h3>The share of blind adults without paid work</h3>
+<p>Never measured for blind Nigerians specifically. The nearest national figures cover all severe functional
+difficulty: adults with at least a lot of difficulty in any domain are employed at 38 percent, against 60 percent
+for everyone else, from the 2018 General Household Survey Panel; and unemployment between ages 25 and 64 runs at
+61 percent for people with disabilities against 21 percent without.</p>
+
+<h2>What the studies of blind beggars agree on</h2>
+<p>The largest group ever asked is 202 blind street beggars counted in Sokoto North in 2009. Of them, 94.6 percent
+had no formal education, 94.1 percent were irreversibly blind, 82 percent had been avoidably blinded, and 87.8
+percent said rehabilitation was blocked because there was no service to go to. When asked whether they wanted
+another way to earn a living, 201 of the 202 said yes, and half of those named farming or trading. The Ilorin
+study found the same: 89 percent wanted other work. Begging is tolerated, not chosen.</p>
+
+<h2>Blindness and poverty, nationally</h2>
+<p>The Nigeria National Blindness and Visual Impairment Survey of 2005 to 2007 examined 13,599 adults aged forty
+and over across the country. It found 4.2 percent of them blind, about 1.13 million people in that age group. It
+collected no livelihood data, but it did measure wealth and literacy. Blindness was 8.5 percent in the poorest
+households and 1.5 percent in the most affluent, more than five times as common. It was 5.8 percent among adults
+who could not read and 1.5 percent among those who could.</p>
+
+<h2>The figures we have retired</h2>
+<ul>
+<li>"Seventy percent of blind people in Nigeria have to beg to survive." Never stated by any source.</li>
+<li>"Seventy percent of Lagos beggars are blind." A 1972 figure, cited second-hand, original untraceable.</li>
+<li>"Ninety percent of blind Nigerians are not working." Fundraising copy with no source.</li>
+<li>"More than three thousand beggars were moved from Sabo in Oyo in 2021." No official total and no blind share
+was published, so we no longer repeat the count.</li>
+</ul>
+
+<h2>What we say instead</h2>
+<p>When we need one sentence, we use this one: when 202 blind street beggars in Sokoto were asked, 201 of them
+said they wanted another way to earn a living. It is the largest sample ever asked the question, it is published
+and checkable, and it says what this site exists to say: the problem has never been ability.</p>
+<p>When a national figure is needed we use the employment gap, 38 percent against 60, and say plainly that it
+covers all severe disability, not blindness alone. When a blindness-specific national figure is needed we use the
+poverty link from the national survey.</p>
+
+<h2>The American comparison</h2>
+<p>Working-age blind and visually impaired Americans were employed at 52.3 percent in 2023, against 76.3 percent
+for the general population. Nigerians with any severe functional difficulty are employed at 38 percent. The
+headline numbers are not different in kind; both describe steep odds. What differs is the floor under the person
+who is not working. An unemployed blind American usually has disability income, health coverage, a state
+rehabilitation agency, cane and technology training, and a free screen reader. An unemployed blind Nigerian has
+about a one in seventy chance of any social protection, rehabilitation at the vocational centre in Oshodi that
+costs more than most families can find, and begging as the documented fallback.</p>
+<p>The American rate has also risen, from 36.3 percent in 2011 to 52.3 percent in 2023, eight points of it in the
+six years to 2023. The reasons given are remote work, which removed the commute, and a tight labour market that
+pulled in workers employers had passed over. Self-report and pandemic-era shifts in who counts as disabled blur
+the edges, but the direction is real, and its lesson is the one this site is built on: when the environment
+changes, blind employment moves. The low numbers were never about capacity.</p>
+
+<h2>What remains unknown</h2>
+<p>No representative study has measured what share of blind Nigerians beg, nationally or in any city. No
+employment rate for people with seeing difficulty has been published from any Nigerian survey, though the data to
+compute one exists in the 2018 household survey panel, the 2018 demographic and health survey and the 2021
+multiple indicator cluster survey. The 2006 census count of visually impaired people by type is not online. We
+are asking Bethesda what figures it uses when it describes the situation of blind people to supporters, and where
+they come from, and will add what we learn.</p>
+
+<h2>Sources</h2>
+<p>Every source, with its link and the date it was read, is listed in {src}. The main ones: Ademola-Popoola,
+Tunde-Ayinmode and Akande, Middle East African Journal of Ophthalmology, 2010; Balarabe, Mahmoud, Omolase and
+Nasiru, Nigerian Journal of Clinical Practice, 2014, and companion papers; Akudinobi and Nwosu, Nigerian Journal of
+Clinical Practice, 2022; Nweze and colleagues, African Health Sciences, 2019; the Nigeria National Blindness and
+Visual Impairment Survey technical report and its poverty paper by Tafida and colleagues; the Disability Data
+Initiative's Nigeria brief; the World Bank's Disability Inclusion in Nigeria: A Rapid Assessment, 2020; the
+International Centre for Investigative Reporting, Why the Blind Beg in Nigeria, 2019; and the National Research
+and Training Center on Blindness and Low Vision at Mississippi State University for the American series.</p>
 """
 
 
@@ -236,7 +352,7 @@ def numbers(d: dict) -> str:
     third_all = est(d, "third-meal-all-in-monthly")
     two = est(d, "two-meals-staples-monthly")
     return f"""<h1>The numbers</h1>
-<p class="lede">What feeding {c(d, "boarders")} blind children costs, what a third meal would add, and where every
+<p class="lede">What feeding {c(d, "boarders")} blind students costs, what a third meal would add, and where every
 figure came from. Every amount here is an estimate until a market check replaces it, and each one says so.</p>
 
 <h2>Who is fed</h2>
@@ -261,10 +377,10 @@ We have asked Bethesda what the third meal used to be and when it stopped.</p>
 <h3>The costs side by side</h3>
 {chart}
 
-<h2>Per child</h2>
+<h2>Per student</h2>
 <p>Divided among the boarders, a third meal costs {m.estimate(per, with_ngn=False)}. That is the clearest number
 on this site: {m.usd_range(per["usd_cents_lo"], per["usd_cents_hi"])} a month restores a third meal for one blind
-child at Bethesda.</p>
+student at Bethesda.</p>
 
 <h2>How these figures were made</h2>
 <ul>
@@ -272,7 +388,7 @@ child at Bethesda.</p>
 visit of 24 October 2026.</li>
 <li>Prices are Lagos and national market figures found online in October 2026. The sources are listed in the
 {m.source_link(two["source"], "feeding analysis")} in the repository.</li>
-<li>Naira are converted at {m.ngn(rate["ngn_per_usd"])} to the dollar, the bank rate observed on
+<li>Naira are converted at {m.ngn(rate["ngn_per_usd"])} to the dollar, the Central Bank of Nigeria rate observed on
 <time datetime="{e(rate["date"])}">{e(m.pretty_date(rate["date"]))}</time>. Every rate used on this site is listed
 on <a href="ledger.html#rates">the ledger</a>.</li>
 <li>Each figure carries the date it was last checked. When {e(brand.REPRESENTATIVE)} checks prices at a market,
@@ -282,7 +398,8 @@ the figures and dates will change here.</li>
 <h2>What we still need to find out</h2>
 <ul>
 <li>What the third meal used to be, and when it stopped.</li>
-<li>Whether the boarders' figure is the number fed, or whether staff and day students eat too.</li>
+<li>Whether the boarders' figure is the number fed, or whether staff and day students eat too, and how the
+larger figure of people Bethesda serves divides among them.</li>
 <li>What else is bought each month besides the four staples, and at what cost.</li>
 <li>Where Bethesda buys, and at what prices, so our estimates can be checked against receipts.</li>
 <li>Whether anyone gives regularly for food now, and what would happen if a gift stopped after a year.</li>
@@ -395,7 +512,7 @@ because feeding never stops; fees stated honestly; a structure for holding the m
 name here; and every dollar that arrives and leaves shown on <a href="ledger.html">the ledger</a>. When that is in
 place this page will say so, and <a href="whats-new.html">What's new</a> will carry the date.</p>
 <p>The figure to keep in mind meanwhile is {m.estimate(per, with_ngn=False)}: what it costs to restore a third
-daily meal for one blind child at Bethesda.</p>
+daily meal for one blind student at Bethesda.</p>
 
 <h2>Used canes and laptops</h2>
 <p>People have asked whether to send white canes and old laptops. Please hold on to them for now. Canes cost less
@@ -423,6 +540,9 @@ def future_studies(d: dict) -> str:
 <a href="https://blindnessinthebible.com">Not By Sight</a> read a verse. They are listed now so that nothing is
 hidden about where the site is going, and so that a reader who knows the ground can tell us what we are missing.</p>
 {items}
+<h2>Published</h2>
+<p><a href="earning-a-living.html">How blind Nigerians earn a living</a>, October 2026. What the evidence says
+about blind Nigerians and begging, and why we stopped repeating a figure we could not stand behind.</p>
 <h2>Suggest one</h2>
 <p>Write to <a href="mailto:{e(brand.CONTACT_EMAIL)}">{e(brand.CONTACT_EMAIL)}</a>.</p>
 """
@@ -472,6 +592,7 @@ PAGES = [
     ("index.html", "Home", home),
     ("story.html", "The story", story),
     ("already.html", "What blind Nigerians already do", already),
+    ("earning-a-living.html", "Earning a living", earning),
     ("numbers.html", "The numbers", numbers),
     ("ledger.html", "The ledger", ledger_page),
     ("help.html", "How to help", help_page),

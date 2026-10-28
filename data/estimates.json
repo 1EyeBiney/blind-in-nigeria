@@ -55,7 +55,7 @@
     },
     {
       "id": "third-meal-per-child-monthly",
-      "label": "A third meal for one child",
+      "label": "A third meal for one student",
       "usd_cents_lo": 450,
       "usd_cents_hi": 650,
       "ngn_lo": null,
@@ -83,15 +83,15 @@
   "counts": [
     {
       "id": "people",
-      "label": "People at Bethesda, students and residents together",
+      "label": "People Bethesda serves, students and residents together, by its own count (breakdown being clarified)",
       "value": 472,
       "approximate": true,
-      "source": "Visit report from our representative, 24 October 2026",
+      "source": "Bethesda's letter of 2 October 2026 and the visit report from our representative, 24 October 2026",
       "checked": "2026-10-24"
     },
     {
       "id": "boarders",
-      "label": "Boarding students",
+      "label": "Boarding students, aged from about twelve to over thirty",
       "value": 282,
       "approximate": true,
       "source": "Visit report from our representative, 24 October 2026",

@@ -4,7 +4,7 @@
     {
       "id": "third-meal",
       "title": "Restore the third daily meal at Bethesda",
-      "description": "The boarding students receive two meals a day; the school had to cut the third. What restoring it costs is set out on the numbers page, down to the cost per child.",
+      "description": "The boarding students receive two meals a day; the school had to cut the third. What restoring it costs is set out on the numbers page, down to the cost per student.",
       "monthly_target_usd_cents": 140000,
       "target_note": "the low end of the staples-only estimate from the October 2026 feeding analysis.",
       "estimate": true,

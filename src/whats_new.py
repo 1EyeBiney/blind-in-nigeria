@@ -14,6 +14,12 @@ FEED = "feed.xml"
 SITE = brand.site_url()
 
 ENTRIES = [
+    ("2026-10-28", "First study: how blind Nigerians earn a living",
+     "We had been repeating a figure about blind Nigerians and begging that no source supports. The first study "
+     "sets out what the evidence actually says, retires the figures we could not stand behind, and gives the "
+     "sentence we use instead: when 202 blind street beggars in Sokoto were asked, 201 wanted another way to earn "
+     "a living.",
+     "earning-a-living.html"),
     ("2026-10-27", "The site begins",
      "The first pages: the story of Bethesda Home and School for the Blind, the numbers behind feeding its students, "
      "an empty ledger waiting for the first transfer, and an honest note that giving is not open yet. The name of the "

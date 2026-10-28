@@ -2,9 +2,9 @@
   "comment": "Exchange rates used in ledger entries, with date and source.",
   "rates": [
     {
-      "date": "2026-10-27",
+      "date": "2026-09-25",
       "ngn_per_usd": 1330,
-      "source": "bank rate observed during ministry planning; street rate ~1390",
+      "source": "Central Bank of Nigeria rate as reported by a rate aggregator, 22 to 25 September 2026; Lagos street rate about 1390; reused in the feeding analysis of 26 October 2026",
       "estimate": true
     }
   ]
