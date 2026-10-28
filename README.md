@@ -2,7 +2,7 @@
 
 A public, transparent record of a small ministry effort supporting blind people in Nigeria, beginning with Bethesda Home and School for the Blind in Surulere, Lagos. Built by Brian Clark, who is blind, with Claude Code, in the same way as [Not By Sight](https://blindnessinthebible.com).
 
-**Live site: https://1eyebiney.github.io/blind-in-nigeria/** (the name and domain are provisional)
+**Live site: https://1eyebiney.github.io/blind-in-nigeria/** (the name is provisional; the intended domain is blindinnigeria.org, not yet registered)
 
 The site shows what the need is, what we are doing about it, and where every dollar goes. Blind people appear on it as the capable people they are. Faith is present and unforced.
 

@@ -1,14 +1,15 @@
 """Everything about the site that may change its name lives here, so a rename touches one file.
 
-The name and the domain are provisional (Brian, 27 October 2026). Until a domain is bought DOMAIN stays empty, no
-CNAME is written, and the site is served at PAGES_URL.
+The name is provisional (Brian, 27 October 2026). The intended domain is blindinnigeria.org (chosen 28 October 2026)
+but it is not registered, so DOMAIN stays empty, no CNAME is written, and the site is served at PAGES_URL.
 """
 
 SITE_NAME = "Blind in Nigeria"
 TAGLINE = "Supporting blind people in Nigeria, beginning with a school in Lagos"
 PROVISIONAL = True            # shows a short note under the header that the name and site are still being built
 
-DOMAIN = ""                   # for example "blindinnigeria.com"; when set, the build writes site/CNAME
+INTENDED_DOMAIN = "blindinnigeria.org"   # chosen 28 October 2026, not yet registered; not shown on pages until it is
+DOMAIN = ""                   # set to INTENDED_DOMAIN once the domain is registered; then the build writes site/CNAME
 PAGES_URL = "https://1eyebiney.github.io/blind-in-nigeria/"
 REPO = "https://github.com/1EyeBiney/blind-in-nigeria"
 
