@@ -1,0 +1,149 @@
+{
+  "comment": "Estimated figures and counted figures the pages render. Money in whole US cents and whole naira. Every entry names its source and the date it was last checked. Change a figure here, rebuild, and every page that uses it changes.",
+  "estimates": [
+    {
+      "id": "two-meals-staples-monthly",
+      "label": "Staples for two meals a day",
+      "usd_cents_lo": 229000,
+      "usd_cents_hi": 283000,
+      "ngn_lo": 3000000,
+      "ngn_hi": 3800000,
+      "unit": "a month",
+      "source": "source-material/40-feeding-numbers.md",
+      "source_title": "Feeding at Bethesda: what two meals cost and what a third would add",
+      "checked": "2026-10-27",
+      "note": "Rice, beans, Indomie noodles and semolina only, at Lagos market prices found online in October 2026, converted at the bank rate in rates.json."
+    },
+    {
+      "id": "two-meals-all-in-monthly",
+      "label": "Two meals a day with soup, stew, oil and fuel",
+      "usd_cents_lo": 340000,
+      "usd_cents_hi": 380000,
+      "ngn_lo": 4500000,
+      "ngn_hi": 5000000,
+      "unit": "a month",
+      "source": "source-material/40-feeding-numbers.md",
+      "source_title": "Feeding at Bethesda: what two meals cost and what a third would add",
+      "checked": "2026-10-27",
+      "note": "Staples plus a third to a half again for what makes them a meal. The widest of these estimates."
+    },
+    {
+      "id": "third-meal-staples-monthly",
+      "label": "A third meal, staples only",
+      "usd_cents_lo": 114000,
+      "usd_cents_hi": 142000,
+      "ngn_lo": 1500000,
+      "ngn_hi": 1900000,
+      "unit": "a month",
+      "source": "source-material/40-feeding-numbers.md",
+      "source_title": "Feeding at Bethesda: what two meals cost and what a third would add",
+      "checked": "2026-10-27",
+      "note": "Half again what two meals cost, using the same foods."
+    },
+    {
+      "id": "third-meal-all-in-monthly",
+      "label": "A third meal with soup, stew, oil and fuel",
+      "usd_cents_lo": 170000,
+      "usd_cents_hi": 190000,
+      "ngn_lo": 2300000,
+      "ngn_hi": 2500000,
+      "unit": "a month",
+      "source": "source-material/40-feeding-numbers.md",
+      "source_title": "Feeding at Bethesda: what two meals cost and what a third would add",
+      "checked": "2026-10-27",
+      "note": "A lighter third meal, such as a breakfast of pap and akara or bread and tea, could cost about half this. Bethesda has been asked what the third meal used to be."
+    },
+    {
+      "id": "third-meal-per-child-monthly",
+      "label": "A third meal for one child",
+      "usd_cents_lo": 450,
+      "usd_cents_hi": 650,
+      "ngn_lo": null,
+      "ngn_hi": null,
+      "unit": "a month",
+      "source": "source-material/40-feeding-numbers.md",
+      "source_title": "Feeding at Bethesda: what two meals cost and what a third would add",
+      "checked": "2026-10-27",
+      "note": "The third-meal monthly estimates divided by the number of boarders. The clearest single figure on this site."
+    },
+    {
+      "id": "third-meal-yearly",
+      "label": "A third meal for everyone, for a year",
+      "usd_cents_lo": 1500000,
+      "usd_cents_hi": 2300000,
+      "ngn_lo": null,
+      "ngn_hi": null,
+      "unit": "a year",
+      "source": "source-material/40-feeding-numbers.md",
+      "source_title": "Feeding at Bethesda: what two meals cost and what a third would add",
+      "checked": "2026-10-27",
+      "note": "Staples only at the low end, everything at the high end. Feeding is a cost that never ends, so it needs giving that repeats."
+    }
+  ],
+  "counts": [
+    {
+      "id": "people",
+      "label": "People at Bethesda, students and residents together",
+      "value": 472,
+      "approximate": true,
+      "source": "Visit report from our representative, 24 October 2026",
+      "checked": "2026-10-24"
+    },
+    {
+      "id": "boarders",
+      "label": "Boarding students",
+      "value": 282,
+      "approximate": true,
+      "source": "Visit report from our representative, 24 October 2026",
+      "checked": "2026-10-24"
+    },
+    {
+      "id": "staff",
+      "label": "Staff",
+      "value": 60,
+      "approximate": true,
+      "source": "Visit report from our representative, 24 October 2026",
+      "checked": "2026-10-24"
+    },
+    {
+      "id": "sighted-staff",
+      "label": "Staff who are sighted",
+      "value": 4,
+      "approximate": false,
+      "source": "Visit report from our representative, 24 October 2026",
+      "checked": "2026-10-24"
+    },
+    {
+      "id": "meals-now",
+      "label": "Meals a day now",
+      "value": 2,
+      "approximate": false,
+      "source": "Bethesda's own account, October 2026, confirmed on the visit of 24 October 2026",
+      "checked": "2026-10-26"
+    },
+    {
+      "id": "meals-before",
+      "label": "Meals a day before the cut",
+      "value": 3,
+      "approximate": false,
+      "source": "Bethesda's own account, October 2026",
+      "checked": "2026-10-26"
+    },
+    {
+      "id": "cane-users",
+      "label": "Students who travel outside the school with a cane",
+      "value": 40,
+      "approximate": true,
+      "source": "Visit report from our representative, 24 October 2026",
+      "checked": "2026-10-24"
+    },
+    {
+      "id": "canes-per-year",
+      "label": "Canes worn out in a year, at about three per cane user",
+      "value": 120,
+      "approximate": true,
+      "source": "Visit report from our representative, 24 October 2026",
+      "checked": "2026-10-24"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+site/
+__pycache__/
+*.pyc
+.pytest_cache/
+media/originals/
+# the working brief names private people and arrangements; a scrubbed public copy is still to be written
+CLAUDE.md

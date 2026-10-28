@@ -1,0 +1,21 @@
+{
+  "comment": "Every movement of money, one entry each. Amounts in whole cents (usd_cents) and whole naira (ngn). status is example, pending, sent or received; only sent and received count as real. goal ties an entry to goals.json so progress can be computed. receipt names a file in receipts/ once there is one. The entry below is an example of the shape and is never shown as real.",
+  "entries": [
+    {
+      "id": "2026-11-example-01",
+      "status": "example",
+      "date": "2026-11-15",
+      "type": "grant",
+      "recipient": "Bethesda Home and School for the Blind",
+      "purpose": "Food for boarding students (trial month)",
+      "usd_cents": 30000,
+      "ngn": 399000,
+      "rate_ngn_per_usd": 1330,
+      "fees_usd_cents": 0,
+      "method": "bank transfer to the organization",
+      "goal": "third-meal",
+      "receipt": null,
+      "notes": "Example only. Replace when the first real transfer is made."
+    }
+  ]
+}
