@@ -33,6 +33,7 @@ That is the same command the publish workflow runs. To look at it locally, `pyth
 | Path | What it holds |
 |---|---|
 | `data/` | The ledger, goals, exchange rates and estimates every figure renders from; `receipts/` for scanned receipts. See `data/README.md` |
+| `sun/` | The SUN screen-reader dictionary and the data behind it, CC BY-SA 4.0; see its README |
 | `source-material/` | Public-safe copies of the documents the figures rest on, brought over one file at a time |
 | `src/` | The build: `brand.py` (every name in one place), `build_site.py`, `content.py` (the pages), `money.py`, `ledger.py`, `charts.py`, `display.py` (reading settings) |
 | `tests/` | The checks described above, plus accessibility checks on every built page |

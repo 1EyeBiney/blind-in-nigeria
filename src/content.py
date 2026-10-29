@@ -13,12 +13,14 @@ import brand
 import charts
 import ledger as lg
 import money as m
+import reading_sun
 
 NAV = [
     ("index.html", "Home"),
     ("story.html", "The story"),
     ("already.html", "What blind Nigerians already do"),
     ("earning-a-living.html", "Earning a living"),
+    ("reading-sun.html", "Reading SUN"),
     ("numbers.html", "The numbers"),
     ("ledger.html", "The ledger"),
     ("help.html", "How to help"),
@@ -110,6 +112,9 @@ need anyone's pity on their behalf; we need the means to do things differently t
 street beggars in Sokoto were asked, 201 of them said they wanted another way to earn a living.
 <a href="earning-a-living.html">How blind Nigerians earn a living</a> is our first study: what the evidence
 says, what it does not, and the figures we have stopped repeating.</p>
+<p>Brian is blind himself, and part of the record is his own work. <a href="reading-sun.html">Reading SUN</a>
+tells how we taught a free screen reader to speak a Bible written in symbols for Deaf readers, and lets
+you read the Epistle of James through it.</p>
 </section>
 
 <h2>Where things stand</h2>
@@ -593,6 +598,7 @@ PAGES = [
     ("story.html", "The story", story),
     ("already.html", "What blind Nigerians already do", already),
     ("earning-a-living.html", "Earning a living", earning),
+    ("reading-sun.html", "Reading SUN", reading_sun.body),
     ("numbers.html", "The numbers", numbers),
     ("ledger.html", "The ledger", ledger_page),
     ("help.html", "How to help", help_page),

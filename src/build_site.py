@@ -174,6 +174,12 @@ def render_all(out: Path = OUT, data: dict | None = None) -> None:
         for f in media.iterdir():
             if f.is_file():
                 shutil.copy(f, out / "media" / f.name)
+    sun = ROOT / "sun"
+    if sun.is_dir():
+        (out / "sun").mkdir(exist_ok=True)
+        for f in sun.iterdir():
+            if f.is_file():
+                shutil.copy(f, out / "sun" / f.name)
     (out / "static" / "style.css").write_text(CSS, encoding="utf-8")
     (out / "static" / "display.js").write_text(display.script(), encoding="utf-8", newline="\n")
     lg.publish(d, out)

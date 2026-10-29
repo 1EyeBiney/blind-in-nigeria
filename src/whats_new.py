@@ -14,6 +14,12 @@ FEED = "feed.xml"
 SITE = brand.site_url()
 
 ENTRIES = [
+    ("2026-10-29", "Reading SUN: a screen reader for a symbol Bible",
+     "Symbolic Universal Notation is a Bible in symbols for Deaf readers, published as a PDF no screen reader could "
+     "read. We took it apart, inferred what most of its 1,306 symbols mean, and built an NVDA dictionary that speaks "
+     "it. The new page explains SUN, lets you read the Epistle of James through the dictionary, and gives you the "
+     "files.",
+     "reading-sun.html"),
     ("2026-10-28", "First study: how blind Nigerians earn a living",
      "We had been repeating a figure about blind Nigerians and begging that no source supports. The first study "
      "sets out what the evidence actually says, retires the figures we could not stand behind, and gives the "

@@ -10,7 +10,8 @@ import build_site  # noqa: E402
 import content  # noqa: E402
 
 EXPECTED_PAGES = ["about.html", "accessibility.html", "already.html", "check-our-work.html", "earning-a-living.html", "future-studies.html",
-                  "help.html", "index.html", "ledger.html", "numbers.html", "story.html", "whats-new.html"]
+                  "help.html", "index.html", "ledger.html", "numbers.html", "reading-sun.html", "story.html",
+                  "whats-new.html"]
 
 # Words that must never appear in a built page. Extend as the hard rules in CLAUDE.md require.
 FORBIDDEN = ["account number", "routing", "iban", "sort code", "salary", "salaries", "wire details"]
